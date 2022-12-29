@@ -17,12 +17,19 @@ fetch("https://restcountries.com/v3.1/all")
     });
 })
 .catch((error)=>console.log(error))
+
+let Whole = document.createElement("div")
+Whole.setAttribute("class","container")
+document.body.append(Whole)
+let row = document.createElement("div")
+row.setAttribute("class","row")
+Whole.append(row)
 function Createdetails({name,flag,latlng,region,capital,lat,long,code}){
-    document.body.innerHTML +=
+    row.innerHTML +=
     
-    `<div class = container>
-    <div class= col-sm-12>
-    <div class="card  text-light" class="col-lg-4"style="width: 18rem;" id="Card">
+    `
+    <div class= "col-lg-4 col-sm-12 col-md-6">
+    <div class="card  text-light" style="width: 18rem;" id="Card">
     <H4 class =" text-center card-header" id="title" ">${name}</H4>
     <img src="${flag}" class="card-img-top" alt="...">
     <div class="card-body">
@@ -34,7 +41,7 @@ function Createdetails({name,flag,latlng,region,capital,lat,long,code}){
     </div>
   </div>
     </div>
-    </div>`
+    `
 }
 
 async function Weather(lat,long){
