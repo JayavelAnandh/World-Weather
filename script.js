@@ -19,7 +19,7 @@ fetch("https://restcountries.com/v3.1/all")
 .catch((error)=>console.log(error))
 
 let Whole = document.createElement("div")
-Whole.setAttribute("class","container")
+Whole.setAttribute("class","container-lg")
 document.body.append(Whole)
 let row = document.createElement("div")
 row.setAttribute("class","row")
