@@ -22,7 +22,7 @@ let Whole = document.createElement("div")
 Whole.setAttribute("class","container")
 document.body.append(Whole)
 let Heading = document.createElement("H1")
-Heading.innerHTML ="WORLS STATISTICS"
+Heading.innerHTML ="WORLD STATISTICS"
 Heading.setAttribute("class","text-center")
 Heading.setAttribute("id","title")
 Whole.append(Heading)
