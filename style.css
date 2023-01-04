@@ -12,6 +12,7 @@ body{
     background-image: linear-gradient(to right,skyblue,blue,violet);
     box-shadow: 5px 5px 20px rgb(139, 133, 133);
     margin-bottom: 30px;
+    color: aliceblue;
     
 }
 #buttons{
